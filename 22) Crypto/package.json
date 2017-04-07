@@ -1,0 +1,26 @@
+{
+  "name": "crypto-example-tuto",
+  "version": "1.0.0",
+  "description": "A crypto example for node js course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omar1123/NodeJsTutorials.git"
+  },
+  "keywords": [
+    "crypto",
+    "node"
+  ],
+  "author": "Omar Veliz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Omar1123/NodeJsTutorials/issues"
+  },
+  "homepage": "https://github.com/Omar1123/NodeJsTutorials#readme",
+  "dependencies": {
+    "crypto": "0.0.3"
+  }
+}
