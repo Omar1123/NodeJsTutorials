@@ -1,18 +1,24 @@
 // Nodejs tutorial encryption with CTR
-var crypto = require('crypto'),
+let crypto = require('crypto'),
     algorithm = 'aes-256-ctr',
-    password = 'd7F3EfDKP3S';
+    password = 'privatekey';
 
 function encrypt(text){
-  var cipher = crypto.createCipher(algorithm,password)
-  var crypted = cipher.update(text,'utf8','hex')
+  let cipher = crypto.createCipher(algorithm,password)
+  let crypted = cipher.update(text,'utf8','hex')
   crypted += cipher.final('hex');
   return crypted;
 }
  
 function decrypt(text){
-  var decipher = crypto.createDecipher(algorithm,password)
-  var dec = decipher.update(text,'hex','utf8')
+  let decipher = crypto.createDecipher(algorithm,password)
+  let dec = decipher.update(text,'hex','utf8')
   dec += decipher.final('utf8');
   return dec;
 } 
+
+let encriptedInfo = encrypt("yourfield");
+console.dir(encriptedInfo);
+
+let decriptedInfo = decrypt(encriptedInfo);
+console.dir(decriptedInfo);
