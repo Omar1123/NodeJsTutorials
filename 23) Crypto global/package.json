@@ -1,0 +1,12 @@
+{
+  "name": "crypto-example-tuto",
+  "version": "1.0.0",
+  "description": "A crypto example for node js course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "aes-cross": "^1.0.9"
+  }
+}
